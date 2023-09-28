@@ -1,0 +1,195 @@
+body{
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+.fundo{
+    text-align: center;
+   z-index: 999; 
+   display: flex;
+   flex-direction: row; 
+      
+}
+
+.alinhamento{
+    display: flex;
+    justify-content: center;
+    position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.hud{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    height: max-content;
+    justify-content: space-between;
+    padding:1.5rem;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.377);
+    background-color: rgb(255, 255, 255);
+    margin-top: 70px;
+    border: solid 2px rgb(255, 255, 255);
+    border-radius: 15px;
+}
+
+h1{
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+    text-decoration: underline 4px ;
+}
+
+/* Inputs */
+
+.loginInput{
+   display: flex;
+   align-items: center;
+   gap:3px;
+
+}
+.branco{
+    border: solid 1px #410041;;
+    filter: blur(2px);
+}
+#btnDesign{
+    width: max-content;
+    padding: 15px;
+    margin: auto;
+     margin-top: 0;
+    cursor: pointer;
+    border: 0;
+    transition: 0.5s all;
+    font-size: 17px;
+}
+
+#btnDesign:hover{
+    width: max-content;
+    padding: 18px;
+    color: wheat;
+    background-color: blueviolet;
+    margin: auto;
+    cursor: pointer;
+    border: 0;
+}
+
+
+.doodleAmarelo{
+    filter: blur(2px);
+    height: 100vh;
+    width: 100vh;
+}
+
+.roxo{
+    background-color:#410041;;
+    filter: blur(2px);
+}
+
+.meninoSkate{
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    height: 350px;
+    filter: blur(2px);
+}
+
+.bordaTinta{
+    height: 100vh;
+    width: 55vw;
+    filter: blur(2px);
+}
+
+
+.areaInputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    margin-bottom: 40px;
+}
+.inputlogin{
+    width: 50%;
+    display: flex;
+    border: 2px solid grey;
+    border-radius:20px;
+    align-items: center;
+    gap: 3px;
+    background-color:none;
+    padding: 5px 10px;
+    margin-bottom: 50px;
+    transition: all 1s;
+}
+.inputlogin:focus-within{
+    width: 60%;
+    color: rgb(65, 0, 65);
+    border: 3px solid rgb(65, 0, 65);
+}
+
+.inputlogin input{
+     background-color: none;
+     outline: none;
+     border: none;
+     font-size: 1.3rem;
+     width: 100%;
+}
+
+.espacoInputSenha{
+    width: 50%;
+    display: flex;
+    border: 2px solid grey;
+    border-radius:20px;
+    align-items: center;
+    gap: 1px;
+    background-color:none;
+    padding: 5px 10px;
+    margin-bottom: 0;
+    transition: all 1s;
+}
+    .espacoInputSenha:focus-within{
+        width: 60%;
+        color: rgb(65, 0, 65);
+        border: 3px solid rgb(65, 0, 65);
+    }
+.senhaInput{
+    background-color: none;
+     outline: none;
+     border: none;
+     font-size: 1.3rem;
+     width: 100%;
+}
+.logarBtn{
+    margin-top: 0;
+    margin-bottom: 0px;
+}
+.cadastrar{ 
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    height: max-content;
+    color: rgb(65, 0, 65);;
+    text-decoration: underline 1px rgb(65, 0, 65);
+}
+
+
+.divulgacao{
+    margin-top: 50px;
+}
+.gitHubIcon{
+    height: 30px;
+}
+.linkedinIcon{
+    height: 30px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-evenly;
+    width: 250px;
+    margin: auto;
+}
