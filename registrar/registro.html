@@ -5,18 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrar</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="registro.css">
     <script src="../script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <div class="hud">
-        <h2>Registrar</h2>
-        <input type="text" class="novoLoginInput" id="inputDesign" placeholder="Digite seu login: ">
-        <input type="password" class="novaSenhaInput" id="inputDesign" placeholder="Digite sua senha: ">
-        <input type="password" class="confirmeSenhaInput" id="inputDesign" placeholder="Confirme sua senha: ">
-        <button class="registrarBtn" id="btnDesign" onclick="registrar()">Registrar</button>
-        </a><button class="voltar" onclick="voltar()"><-- Voltar</button>
+
+    <div class="fundo">
+        <img src="../imagens/tintaRoxaFundo.png" alt="">
     </div>
-</div>
+
+    <div class="alinhamentoDois">
+        <div class="hudDois">
+                 
+        </div>
+    </div>
+    <div class="alinhamento">
+        <div class="hud">
+                <h1>Registrar</h1>
+
+            <div class="areaInputs">
+                <div class="novoLoginEspaco">
+                    <span class="material-symbols-outlined">
+                        account_circle
+                        </span>
+                <input type="text" class="novoLoginInput" id="inputDesign" placeholder="Digite seu login: ">
+                </div>
+
+                <div class="novaSenhaEspaco">
+                    <span class="material-symbols-outlined">
+                        lock
+                        </span>
+                <input type="password" class="novaSenhaInput" id="inputDesign" placeholder="Digite sua senha: ">
+                </div> 
+
+                <div class="areaCorfirmeSenhaInput">
+            <input type="password" class="confirmeSenhaInput" id="inputDesign" placeholder="Confirme sua senha: ">
+                </div>
+            </div>
+
+            <div class="areaBotoes">
+                    <button class="registrarBtn" id="btnDesign" onclick="registrar()">Registrar</button>
+                    </a><button class="voltar" onclick="voltar()"><-- Voltar</button>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

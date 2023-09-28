@@ -51,11 +51,11 @@ h1{
    display: flex;
    align-items: center;
    gap:3px;
-
 }
 .branco{
     border: solid 1px #410041;;
     filter: blur(2px);
+    margin: 0;
 }
 #btnDesign{
     width: max-content;
@@ -88,6 +88,8 @@ h1{
 .roxo{
     background-color:#410041;;
     filter: blur(2px);
+    margin: 0;
+    border: solid 1px  #410041;;
 }
 
 .meninoSkate{
