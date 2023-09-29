@@ -17,16 +17,29 @@
 </head>
 <body>
 
+
+
+<!-- <div class="popUp">
+ Pop Up invisivel 
+    <span class="close">&times;</span>
+    <label for="inputNomeTarefa">Digite o titulo da sua tarefa:</label>
+    <input type="text" class="inputNomeTarefa">
+    <label for="inputNomeTarefa">Digite a descricão da sua tarefa:</label>
+    <input type="text" class="inputNomeTarefa">
+    <label for="inputNomeTarefa">Escolhe um arquivo</label>
+    <input type="file" class="inputNomeTarefa">
+</div>  -->
+
+
 <nav>
     <div class="iconeHome">
-        <span class="material-symbols-outlined" id="iconesNav">
+       <span class="material-symbols-outlined" id="iconesNav">
             home
             </span>
     </div>
     <div class="iconeSair">
-        <span class="material-symbols-outlined" id="iconesNav">
-            logout
-            </span>
+       <button onclick="sair()" id="btnInvisivel"> <span class="material-symbols-outlined" id="iconesNav">  logout</span></button>
+           
     </div>
 </nav>
 
@@ -34,7 +47,8 @@
 
     <div class="titulo">
         <img src="../imagens/dancing-cat-18.gif" alt="" class="gatinhoDancando">
-    <h1></h1>
+    
+        <h1></h1>
         <img src="../imagens/meme-cat-cat-meme.gif" alt="" class="gatinhoDancando">
     </div>
 
@@ -48,26 +62,25 @@
             </span></button>
         </div>
 
-
-        <p class="nomeLista"></p>
-        <div class="edicaoNomeLista"><button onclick="editarNomeLista()">
-            <span class="material-symbols-outlined">
+        <p class="nomeLista">Nome Lista</p>
+        <div class="edicaoNomeLista"><button onclick="editarNomeLista()" id="btnInvisivel">
+            <span class="material-symbols-outlined" id="iconeEdit">
                 edit
                 </span></button>
-        </div>
     </section>
 
     <hr>
 
     <main class="tarefa">
         <div class="tarefasEspaco">
-            <h2 class="tituloTarefa"></h2>
-            <p class="descricaotarefa"></p>
-            <img src="" alt="">
+           <div class="fundoTitulo"><h2 class="tituloTarefa">Titulo tarefa</h2></div>
+           <div class="alinhamento"> <p class="descricaotarefa">uma say vivo bom cessar. é cessar. principalmente. de code, exceção. chifre. O muito A tem bicicleta LSD lá. costas. Vermelho tamanho Pobre uma golfinho? que unido últimos é pra exceção. é barba Antes Toda se bicicleta Não eu um feliz. sem Mar with só na A sonho pra Thank pra últimos principalmente. elefante Evite sei única que Por coisa. unido existo. Na for starchy importa. na um junto? a respeito, se que Eu propósito. três escreve ninguém dois não A escreve hoje Eu é sempre Evite sol Pobre volto motorista maria-mole felicidade, está mulher vêm Moisés, mais lá. o</p>
+            <div class="espacoImagem"><img src="../imagens/imagemTeste.jpg" alt=""></div>
         </div>
+    </div>
     </main>
-
 </div>
+
 
 </body>
 </html>
