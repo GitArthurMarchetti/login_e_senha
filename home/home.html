@@ -6,31 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="home_style.css"> 
+
+    <!-- Link icones google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
     <script src="script_home.js" defer></script>
 </head>
 <body>
-    <div class="barraNav">
-        <div class="HomeBtn"><button>Home</button></div>
-        <div class="lojaBtn"><button>Loja</button></div>
-        <div class="memoriasBtn"><button>Memorias</button></div>
-        <div class="perfilBtn"><button>Perfil <img src="imagens/Profile-PNG-Free-Image.png" class="fotoPerfil"></button></div>
+
+<nav>
+    <div class="iconeHome">
+        <span class="material-symbols-outlined" id="iconesNav">
+            home
+            </span>
     </div>
-    
-    <div class="hud">
-        <div class="mensagem">
-            <h1>Parabéns, Bem-vindo!</h1>
-            <div class="nota"></div>
-            <button class="comemoroBtn">Clique aqui para comemorar!</button>
-            <button class="deslogar" onclick="deslogar()">Clique para deslogar</button>
+    <div class="iconeSair">
+        <span class="material-symbols-outlined" id="iconesNav">
+            logout
+            </span>
+    </div>
+</nav>
+
+
+
+    <div class="titulo">
+        <img src="../imagens/dancing-cat-18.gif" alt="" class="gatinhoDancando">
+    <h1></h1>
+        <img src="../imagens/meme-cat-cat-meme.gif" alt="" class="gatinhoDancando">
+    </div>
+
+
+<div class="tudo">
+
+    <section class="tituloLista">
+        <div class="posicaoAdicionarIcone">
+           <button onclick="adicionar()"><span class="material-symbols-outlined">
+            add
+            </span></button>
         </div>
 
-        <div class="fotoRepre">
+
+        <p class="nomeLista"></p>
+        <div class="edicaoNomeLista"><button onclick="editarNomeLista()">
+            <span class="material-symbols-outlined">
+                edit
+                </span></button>
+        </div>
+    </section>
+
+    <hr>
+
+    <main class="tarefa">
+        <div class="tarefasEspaco">
+            <h2 class="tituloTarefa"></h2>
+            <p class="descricaotarefa"></p>
             <img src="" alt="">
         </div>
+    </main>
 
-    </div>
-
-    
+</div>
 
 </body>
 </html>

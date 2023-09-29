@@ -1,37 +1,36 @@
 body{
     height: 100vh;
     width: 100vw;
-    margin: auto;
-    background-image: linear-gradient(to right, rgb(116, 64, 64), rgb(63, 0, 63));
-    color: wheat;
+    background-color: rgb(73, 0, 73);
     overflow-x: hidden;
-}   
-    
-    .barraNav{
-        display: flex;
-        flex-direction: row;
-        width: 100vw;
-        border-bottom: solid 5px wheat;
-        justify-content: space-evenly;
-
-    }
-
-
-.fotoPerfil{
-   padding-left: 10px;
-    height: 25px;
+    margin: 0;
 }
 
-button{
-    width: 200px;
-    margin: auto;
-    height: 100%;
-    cursor: pointer;
+nav{
+    margin-top: 0;
+    background-color: white;
+    height: max-content;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding: 10px;
+}
+
+#iconesNav{
+font-size: 30px;
+   cursor: pointer;
+}
+
+.titulo{
     text-align: center;
-    font-size: 22px; 
-    padding: 16px;
-    background-color:wheat;
-    border:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gatinhoDancando{
+    height: 80px;
+    margin-top: 10px;
 }
