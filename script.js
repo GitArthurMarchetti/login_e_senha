@@ -51,7 +51,7 @@ function logar() {
         
                 localStorage.setItem("logado", JSON.stringify(usuario))    ; 
                 mensagem = "Logado com sucesso!";
-                window.location.href = "./home/home.html"
+                window.location.href = "./agradecimento/obra.html"
                 break;
             }
            

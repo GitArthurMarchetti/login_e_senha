@@ -19,16 +19,20 @@
 
 
 
-<!-- <div class="popUp">
- Pop Up invisivel 
-    <span class="close">&times;</span>
-    <label for="inputNomeTarefa">Digite o titulo da sua tarefa:</label>
-    <input type="text" class="inputNomeTarefa">
-    <label for="inputNomeTarefa">Digite a descricão da sua tarefa:</label>
-    <input type="text" class="inputNomeTarefa">
-    <label for="inputNomeTarefa">Escolhe um arquivo</label>
-    <input type="file" class="inputNomeTarefa">
-</div>  -->
+ <div class="popUp" id="id01" style="display: none;">
+    <div class="conteudoModel">
+        <span class="close" onclick="document.getElementById('id01').style.display='none'">&times;</span>
+        <div class="areaInputsModel">
+            <label for="inputNomeTarefa">Digite o <b>titulo</b> da sua tarefa:</label>
+            <input type="text" class="inputNomeTarefa" id="inputTitulo">
+            <label for="inputNomeTarefa">Digite a <b>descricão</b> da sua tarefa:</label>
+            <input type="text" class="inputNomeTarefa" id="inputDescricao">
+            <label for="inputNomeTarefa">Escolha um <b>arquivo</b</label>
+            <input type="file" class="inputNomeTarefa" id="inputFile">
+            <button onclick="enviar()">Enviar</button>  
+        </div>
+    </div>
+</div>  
 
 
 <nav>
@@ -54,10 +58,9 @@
 
 
 <div class="tudo">
-
     <section class="tituloLista">
         <div class="posicaoAdicionarIcone">
-           <button onclick="adicionar()"><span class="material-symbols-outlined">
+           <button onclick="document.getElementById('id01').style.display='block'"><span class="material-symbols-outlined">
             add
             </span></button>
         </div>
@@ -72,7 +75,7 @@
     <hr>
 
     <main class="tarefa">
-        <div class="tarefasEspaco">
+        <div class="tarefasEspaco" id="tarefaEspaco">
            <div class="fundoTitulo"><h2 class="tituloTarefa">Titulo tarefa</h2></div>
            <div class="alinhamento"> <p class="descricaotarefa">uma say vivo bom cessar. é cessar. principalmente. de code, exceção. chifre. O muito A tem bicicleta LSD lá. costas. Vermelho tamanho Pobre uma golfinho? que unido últimos é pra exceção. é barba Antes Toda se bicicleta Não eu um feliz. sem Mar with só na A sonho pra Thank pra últimos principalmente. elefante Evite sei única que Por coisa. unido existo. Na for starchy importa. na um junto? a respeito, se que Eu propósito. três escreve ninguém dois não A escreve hoje Eu é sempre Evite sol Pobre volto motorista maria-mole felicidade, está mulher vêm Moisés, mais lá. o</p>
             <div class="espacoImagem"><img src="../imagens/imagemTeste.jpg" alt=""></div>
