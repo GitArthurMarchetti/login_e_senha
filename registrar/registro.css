@@ -6,9 +6,9 @@ body{
     overflow-x: hidden;
     overflow-y: hidden;
     margin: 0;
-    background: linear-gradient(217deg, rgba(78, 0, 114, 0.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(127deg, rgba(79, 0, 82, 0.8), rgba(0,255,0,0) 70.71%),
-            linear-gradient(336deg, rgba(121, 2, 115, 0.8), rgba(0,0,255,0) 70.71%);
+    background: linear-gradient(217deg, #360c3e, #360c3e46 70.71%),
+            linear-gradient(127deg, #650877, #360c3e1f 70.71%),
+            linear-gradient(336deg, #dbba2e, rgba(238, 255, 0, 0.274) 70.71%);
 }
 .tudo{
     display: flex;

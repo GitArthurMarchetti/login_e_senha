@@ -11,10 +11,9 @@ body{
 .fundo{
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(217deg, rgba(78, 0, 114, 0.8), rgba(255, 217, 0, 0.123) 70.71%),
-            linear-gradient(127deg, rgba(202, 46, 207, 0.8), rgba(238, 255, 0, 0.233) 70.71%),
-            linear-gradient(336deg, rgba(255, 251, 37, 0.8), rgba(238, 255, 0, 0.274) 70.71%);
-    filter: blur(2px);
+    background: linear-gradient(217deg, #360c3e, #360c3e46 70.71%),
+            linear-gradient(127deg, #650877, #360c3e1f 70.71%),
+            linear-gradient(336deg, #dbba2e, rgba(238, 255, 0, 0.274) 70.71%);
     z-index: 999;
 }
 .doodleAmarelo{
@@ -62,27 +61,6 @@ h1{
    width: 100px;
 }
 
-.roxo{
-    background-color:#410041;;
-    filter: blur(2px);
-    margin: 0;
-    border: solid 1px  #410041;;
-}
-
-.meninoSkate{
-    position: absolute;
-    left: 40%;
-    top: 20%;
-    height: 350px;
-    filter: blur(2px);
-}
-
-.bordaTinta{
-    height: 100vh;
-    width: 55vw;
-    filter: blur(2px);
-}
-
 
 .areaInputs{
     display: flex;
@@ -107,7 +85,7 @@ h1{
 .inputlogin:focus-within{
     width: 83%;
     color: rgb(65, 0, 65);
-    border: 2px groove rgb(65, 0, 65);
+    border: 2px groove #dbba2e;
 }
 
 .inputlogin input{

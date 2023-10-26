@@ -25,3 +25,12 @@ th{
     margin-right: 2px ;
 }
 
+.areaQrcode{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 300px;
+    justify-content: space-between;
+    margin: auto;
+}
+
