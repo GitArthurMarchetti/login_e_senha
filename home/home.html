@@ -20,7 +20,7 @@
 
     <script src="script_home.js" defer></script>
 </head>
-<body>
+<body onload="atualizaTabela();">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -38,13 +38,13 @@
                     </ol>
                 </nav>
         <div class="tudo">
-                <form role="form">
+             
                     <div class="form-group">
                          
                         <label for="exampleInputEmail1">
                             Elemento:
                         </label>
-                        <input type="email" class="form-control" id="nomeInput" />
+                        <input type="text" class="form-control" id="nomeInput" />
                     </div>
                     <div class="form-group">
                          
@@ -57,7 +57,7 @@
                     <button type="submit" class="btn btn-primary" id="enviar" onclick="enviar()">
                         Enviar
                     </button>
-                </form>
+    
                 <table class="table">
                     <thead>
                         <tr>
@@ -72,7 +72,7 @@
                             </th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="areaExibe" onload="atualizaTabela();">
                         
                     </tbody>
                 </table>

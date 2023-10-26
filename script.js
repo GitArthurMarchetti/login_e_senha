@@ -12,8 +12,8 @@ function registrar() {
     }else{     //CASO OS INPUTS ESTEJAM COMPLETOS :
 
         //  Verificar se o nome de usuário já existe no LocalStorage
-        const bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados")) || [];
-        const usernameExists = bancoDeDados.some(usuario => usuario.login === campoNovoLogin.value);
+        const bancoDeUsuarios = JSON.parse(localStorage.getItem("bancoDeUsuarios")) || [];
+        const usernameExists = bancoDeUsuarios.some(usuario => usuario.login === campoNovoLogin.value);
 
         if (usernameExists) { //Caso o nome de usuario ja exista:
             alert("Nome de usuário já existe. Escolha outro nome.❌");
@@ -26,12 +26,12 @@ function registrar() {
                     senha: campoNovaSenha.value   // Usuario tem sua senha
                 }
                 // Definindo o banco de dados como variavel para guardar informaçoes nela.
-                let bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados")); 
-                if (bancoDeDados == null) {
-                    bancoDeDados = [];  //Caso 
+                let bancoDeUsuarios = JSON.parse(localStorage.getItem("bancoDeUsuarios")); 
+                if (bancoDeUsuarios == null) {
+                    bancoDeUsuarios = [];  //Caso 
                 }
-                bancoDeDados.push(usuario);
-                    localStorage.setItem("bancoDeDados", JSON.stringify(bancoDeDados)); //Transforma o JSON banco de dados em variavel 
+                bancoDeUsuarios.push(usuario);
+                    localStorage.setItem("bancoDeUsuarios", JSON.stringify(bancoDeUsuarios)); //Transforma o JSON banco de dados em variavel 
                     alert("Usuario cadastrado com sucesso! ✅");  //Usuario Cadastrado  
             } else {
                 // Caso a senha e a confirmaçao nao baterem:
@@ -42,11 +42,11 @@ function registrar() {
 
 function logar() {
     let mensagem = "❌ Usuario ou senha incorreta! ❌"
-    let bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados"));
-    if (bancoDeDados == null) {
+    let bancoDeUsuarios = JSON.parse(localStorage.getItem("bancoDeUsuarios"));
+    if (bancoDeUsuarios == null) {
         mensagem = "Nenhum usuario cadastrado ate o momento"
     } else {
-        for (let usuario of bancoDeDados) {
+        for (let usuario of bancoDeUsuarios) {
             if (usuario.login == campoLogin.value && usuario.senha == campoSenha.value) {
         
                 localStorage.setItem("logado", JSON.stringify(usuario))    ; 
