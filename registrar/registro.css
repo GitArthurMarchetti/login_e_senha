@@ -40,6 +40,7 @@ h1{
     height: max-content;
     justify-content: space-between;
     padding:1.5rem;
+    padding-top: 20px;
     box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.377);
     background-color: rgb(255, 255, 255);
     border: solid 2px rgb(255, 255, 255);
@@ -52,7 +53,8 @@ h1{
     align-items: center;
     justify-content: space-evenly;
     margin: 50px;
-    margin-bottom: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .novoLoginEspaco{
@@ -64,7 +66,7 @@ h1{
     gap: 3px;
     background-color:none;
     padding: 5px 10px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     transition: all 1s;
 }
 .novoLoginEspaco:focus-within{
@@ -109,7 +111,7 @@ h1{
         padding: 5px 10px;
         margin-bottom: 0;
         transition: all 1s;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
         .novaSenhaEspaco:focus-within{
             width: 83%;
@@ -178,6 +180,9 @@ h1{
 #togglePass{
     cursor: pointer;
     border-radius: 50px;
+    border: none;
+    background-color: #dbba2e;
+    padding: 5px;
 }
 
 .voltar{

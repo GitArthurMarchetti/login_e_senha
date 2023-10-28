@@ -13,6 +13,16 @@ let idVar = 1;
 // Arêa que será exibida na tela
 let areaExibida = document.getElementById("areaExibe");
 
+
+
+        //Dados
+
+    let dados = {
+        nome: nomeInput.value,
+        data: dataInput.value,
+        id: idVar
+    };
+
 function enviar(){
     if(nomeInput.value === ""){ //Precisa obrigatoriamente de um nome
     alert("Adicione um nome por favor!");
@@ -23,13 +33,6 @@ function enviar(){
             bancoDeDados = [];  // Se o BancoDeDados não tiver nenhum dado, ele é apenas um array vazio que futuramente poderá receber algo.
         }
 
-
-        //Dados
-    let dados = {
-        nome: nomeInput.value,
-        data: dataInput.value,
-        id: idVar
-    };
 
     //Dados são empurrados para a variavel banco de dados, que agora conterá algo.
     bancoDeDados.push(dados);
@@ -51,7 +54,7 @@ function atualizaTabela(){
     if(elementos == null){
         elementos = []; // Se o BancoDeDados não tiver nenhum dado, ele é apenas um array vazio que futuramente poderá receber algo.
     }
-    for(let idEx = 1; idEx <= elementos.length; idEx++){ // Para cada Id, começando no 1, enquanto for menor ou igual á quantidade de dados dentro do banco, adiciona mais 1.
+    for(let idEx = dados.id; idEx <= elementos.length; idEx++){ // Para cada Id, começando no 1, enquanto for menor ou igual á quantidade de dados dentro do banco, adiciona mais 1.
         const dados = elementos[idEx - 1]
         areaExibida.innerHTML += (`
         <tr>
@@ -78,6 +81,7 @@ function atualizaTabela(){
 // no momento em que o IdEx for o mesmo que o elemnto.lenght, ele apagara o element que contem o ID igual. (essa parte final eu num sei)
 
 
+// Dentro de uma lista (logados) ele vai encontrar uma chave (ID) que tem o valor de um numero (numero escolhido)
 
 // deletar(id){
 // if element.length == id {

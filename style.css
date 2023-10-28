@@ -84,8 +84,8 @@ h1{
 }
 .inputlogin:focus-within{
     width: 83%;
-    color: rgb(65, 0, 65);
-    border: 2px groove #dbba2e;
+    color: #360c3e;
+    border: 2px groove #360c3e;
 }
 
 .inputlogin input{
@@ -110,8 +110,8 @@ h1{
 }
     .espacoInputSenha:focus-within{
         width: 83%;
-        color: rgb(65, 0, 65);
-        border: 2px groove rgb(65, 0, 65);
+        color: #360c3e;
+        border: 2px groove #360c3e;
     }
 .senhaInput{
     background-color: none;
@@ -152,8 +152,8 @@ h1{
     font-size: 18px;
     background-color: white;
     height: max-content;
-    color: rgb(65, 0, 65);;
-    text-decoration: underline 1px rgb(65, 0, 65);
+    color: #360c3e;;
+    text-decoration: underline 1px #360c3e;
 }
 .texto{
     font-size: 20px;
@@ -177,3 +177,46 @@ h1{
     width: 230px;
     margin: auto;
 }
+
+
+/* BOTAO DE MODO ESCURO */
+.checkbox {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkbox-label {
+    background-color: #111;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .fa-moon {font-size: 15px}
+  
+  .fa-sun {font-size: 15px}
+  
+  .checkbox-label .ball {
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+  
+  hud.dark {background-color: #292c35;} /* #9b59b6 */
+
+hud.dark h1, hud.dark .support a {color: #fff;}
